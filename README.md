@@ -15,41 +15,63 @@ A、基础概念
    
 B、相关术语
 
-                          N=165	预测NO	预测YES	
+                          N=165	    预测NO	预测YES	
                           实际NO     TN=50	 FP=10      60
-                          实际YES    FN=5	 TP=100	105
-	                                55	     110	
+                          实际YES    FN=5	         TP=100	    105
+	                             55	            110	
 
    a、精确度（Accuracy）：分类器预测正确的概率
+   
                          （TP+TN）/总预测次数
+			 
                          （100+50）165
+			 
    b、错误分类率（Misclassification Rate）:  分类器预测预测错误的概率
+   
                          （FP+FN）/总预测次数
+			 
                           （10+5）/165
+			  
    c、预测YES时， 预测正确的概率 （True positive rate）：分类器预测结果为YES，实际结果为YES
+   
                            TP/ 实际中YES的总数
+			   
                            100/105
+			   
                            也称作“灵敏度”或召回
+			   
    d、预测YES时， 预测错误的概率 （False Positive Rate）：分类器预测结果为YES，实际结果为NO
+   
                            FP/ 实际中NO的总数
+			   
                            10/60
                            
    e、预测NO时，预测正确的概率（True Negative Rate）： 分类器预测结果为NO，实际结果也为NO
+   
                            TN/实际中NO的总数
+			   
                            50/60
                            
    f、精确度（precision）：分类器预测结果为YES，则此次预测正确的概率
+   
                            TP/预测中YES的总数
+			   
                            100/110
                            
    g、实际YES的概率（Prevalence）：样本发生中，实际结果为YES的概率
+   
                            YES的总数/总预测次数
+			   
                            105/65
                            
    f、实际NO的概率（Null Error Rate）： 样本发生中，实际结果为NO的概率
+   
                            NO的总数/总预测数
+			   
                            60/165
+			   
        注：准确性悖论（Accuracy Paradox）：在实际预测中，并不是一味追求准确率越高越好，例如在看病时，不能因为A病的发病率为99%，
+       
                                          那就在遇到这类病人时盲目的下定是A病。
        
 

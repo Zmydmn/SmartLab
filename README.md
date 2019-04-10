@@ -6,11 +6,17 @@ SmartLab
 一、循序漸進了解基礎知識
 
 1、Simple guide to confusion matrix terminology https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/ 
+
 您學會了什麼?
+
 A、基础概念
+
    a、True positive(TP):  pridicted YES , actual YES
+   
    b、True negative(TN):  pridicted NO  , actual NO
+   
    c、False positive(FP): pridicted YES , actual NO
+   
    d、False negative(FN): pridicted NO  , actual YES
    
 B、相关术语

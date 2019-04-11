@@ -9,6 +9,8 @@ SmartLab
 
 您學會了什麼?
 
+https://github.com/AmberJoe/SmartLab/blob/master/SmartLabQ1.ipynb
+
 A、基础概念
 
    a、True positive(TP):  pridicted YES , actual YES

@@ -53,7 +53,7 @@ B、相关术语
                            FP/ 实际中NO的总数
 			   
                            10/60
-                           dafsasdfasd
+                          
    e、预测NO时，预测正确的概率（True Negative Rate）： 分类器预测结果为NO，实际结果也为NO
    
                            TN/实际中NO的总数

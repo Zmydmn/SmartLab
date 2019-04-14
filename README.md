@@ -128,7 +128,7 @@ B、相关术语
 2、Evaluation of binary classifiers https://en.wikipedia.org/wiki/Evaluation_of_binary_classifiers 
 您學會了什麼?
 
-一、基本概念
+一、公式列表
 
    1、灵敏度(Sensitivity):  TPR = TP/P = TP/( TP + FN )
    
@@ -140,8 +140,40 @@ B、相关术语
    
    5、误报率（False Positive Rate）： FPR = FP/N = FP/(FP+ TN) = 1-TNR
    
-   6、错误发现率（False Dicovery Rate）: 
+   6、错误发现率（False Dicovery Rate）:  FDR = FP/(FP + TP) = 1-PPV
    
+   7、错误率或错误否定率（Miss Rate / False Negative Rate ）: FNR = FN/(FN + TP) = 1-TPR
+   
+   8、准确度（Accuracy）: ACC = (TP + TN)/(P + N)    {P+N 即总预测次数}
+   
+   9、 平均准确度（Balanced Accuracy）: BACC = (TP/P + TN/N)/2
+   
+   10、F1得分（F1 SCORE） : F1 = 2TP/(2TP +FP +FN)
+   
+   11、马修斯相关系数（MCC）： (TP*FN - FP*FN) / √{(TP+FP) * (TP+FN) * (TN +FP) * (TN+FN) }
+   
+   12、熟练程度（Uncertainty Coefficient）:
+   
+       L = (P+N)*log(P+N)
+       
+       LTP = TP*log[TP/[(TP+FP)*(TP+FN)]
+       
+       LFP = FP*log[FP/[(FP+TP)*(FP+TN)]
+       
+       LFN = FN*log[FN/[(FN+TP)*(FN+TN)]
+       
+       LTN = TN*log[TN/[(TN+FP)*(TN+FN)]
+       
+       LP = P*log[P/(P+N)]
+       
+       LN = N*log[N/(P+N)]
+       
+       UC = (L + LTP + LFP + LFN + LTN)/(L + LP + LN)
+       
+       知情（Informedness） = Sensitivity + Specifity - 1
+       
+       标记（Markedness） = PPV + NPV -1
+       
 
 
 3、Machine Learning Fundamentals: Sensitivity and Specificity https://www.youtube.com/watch?v=sunUKFXMHGk 

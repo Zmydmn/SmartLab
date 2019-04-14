@@ -13,13 +13,27 @@ https://github.com/AmberJoe/SmartLab/blob/master/SmartLabQ1.ipynb
 
 A、基础概念
 
-   a、True positive(TP):  pridicted YES , actual YES
+   a、True positive(TP):  pridicted YES , actual YES   
    
    b、True negative(TN):  pridicted NO  , actual NO
    
    c、False positive(FP): pridicted YES , actual NO
    
    d、False negative(FN): pridicted NO  , actual YES
+   
+   可便于理解的方法
+   
+   前面的ture/false 表示预测的正确性，后面的Postive/Negative，代表预测的结果
+   
+   TP : 预测的是正样本，预测对了
+   
+   TN ：预测的是负样本，预测对了
+   
+   FP : 预测的是正样本，预测错了
+   
+   FN : 预测的是负样本，预测错了
+   
+   
    
 B、相关术语
 
@@ -134,14 +148,14 @@ B、相关术语
    
    2、特异性（Specificity）: SPC = TN/N = TN / ( FP + TN )
    
-   3、精确度（Precision）: PPV = TP/( TP + FP )
+   3、精确度（Precision）（预测正样本，预测成功的精确度）: PPV = TP/( TP + FP )
    
-   4、负预测值（Negative Predictive Value） : NPV = TN/(TN+FN)
+   4、负预测值（Negative Predictive Value）（预测负样本，预测失误的精确度） : NPV = TN/(TN+FN)
    
-   5、误报率（False Positive Rate）： FPR = FP/N = FP/(FP+ TN) = 1-TNR
+  ？ 5、误报率（False Positive Rate）： FPR = FP/N = FP/(FP+ TN) = 1-TNR
    
-   6、错误发现率（False Dicovery Rate）:  FDR = FP/(FP + TP) = 1-PPV
-   
+   6、错误发现率（False Dicovery Rate）（相反与精确度，预测正样本，预测错误的精确度）:  FDR = FP/(FP + TP) = 1-PPV
+   ————————————————————————————————————————————————————————————————————————————————————————————————————————————————
    7、错误率或错误否定率（Miss Rate / False Negative Rate ）: FNR = FN/(FN + TP) = 1-TPR
    
    8、准确度（Accuracy）: ACC = (TP + TN)/(P + N)    {P+N 即总预测次数}
@@ -178,6 +192,66 @@ B、相关术语
 
 3、Machine Learning Fundamentals: Sensitivity and Specificity https://www.youtube.com/watch?v=sunUKFXMHGk 
 您學會了什麼?
+
+一、二维矩阵
+
+   案例                             Actual
+                   
+		             Has ill           don't ill
+		 
+             Has ill         139                  20
+	     
+  Predicted  
+  
+            Don't ill        32                   112
+   
+   
+   1、Sensitive ： tell us what percentage of patients with ill were correctly identified
+   
+                  Sensitive = 139 /(139+32）= 0.81
+		  
+		  Random Forest is slightly better at correctly identifying positives than Logistic Regression model 
+   
+   2、Specificity ：Tell us what percentage of patients without ill were correctly identified
+   
+                  Specificity = 112/(112+20) = 0.85
+		  
+		  Logistic Regression model is slightly better at correctly identifying negatives than Random Forest
+		  
+   
+二、三维矩阵
+
+            案例                             Actual
+                   
+		              Troll         Gore         Cool
+		 
+               Troll           12           102           93
+	      
+  Predicted    Gore            112           23           77
+  
+               Cool            83            92           17
+	           
+      1、Troll
+      
+   （1） Sensitivity =  TP/( TP + FN )
+	 
+	 对于Troll来说，TP为12，而FN可以理解为，预测不是Troll时，预测错误，于是FN = 112 + 83
+	 
+	 即 Sensitivity = 12/(12+112+83) = 0.11
+	 
+	 It means only 11% of the people that loved Troll more than Gore or Cool were correctly identified.
+
+   （2） Specificity = TN / ( FP + TN )
+   
+         对于Troll来说，TN为 “预测不是Troll，实际结果也不是Troll”，即（23+77）+（92+17）=209
+	 
+	               FP为 “预测是Troll，实际结果却不是Troll”，即102 + 93
+		       
+         即Specificity = [（23+77）+（92+17）]/（209 + 102 + 93） = 0.52%
+	 
+	 It means 0.52% of the people who loved Gore or Cool more than Troll were correctly identified.
+	 
+	 
 
 4、reconstruct a 2X2 confusion matrix (TP, TN, FP, FN) from Sensitivity and Specificity https://stats.stackexchange.com/questions/370125/reconstruct-a-2x2-confusion-matrix-tp-tn-fp-fn-from-sensitivity-and-specifi 
 您學會了什麼?

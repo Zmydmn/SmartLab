@@ -256,6 +256,7 @@ B、相关术语
 4、reconstruct a 2X2 confusion matrix (TP, TN, FP, FN) from Sensitivity and Specificity https://stats.stackexchange.com/questions/370125/reconstruct-a-2x2-confusion-matrix-tp-tn-fp-fn-from-sensitivity-and-specifi 
 您學會了什麼?
 
+
 5、ROC and AUC, Clearly Explained https://www.youtube.com/watch?v=xugjARegisk
 您學會了什麼? 您學會了畫ROC曲線嗎?
 

@@ -128,6 +128,22 @@ B、相关术语
 2、Evaluation of binary classifiers https://en.wikipedia.org/wiki/Evaluation_of_binary_classifiers 
 您學會了什麼?
 
+一、基本概念
+
+   1、灵敏度(Sensitivity):  TPR = TP/P = TP/( TP + FN )
+   
+   2、特异性（Specificity）: SPC = TN/N = TN / ( FP + TN )
+   
+   3、精确度（Precision）: PPV = TP/( TP + FP )
+   
+   4、负预测值（Negative Predictive Value） : NPV = TN/(TN+FN)
+   
+   5、误报率（False Positive Rate）： FPR = FP/N = FP/(FP+ TN) = 1-TNR
+   
+   6、错误发现率（False Dicovery Rate）: 
+   
+
+
 3、Machine Learning Fundamentals: Sensitivity and Specificity https://www.youtube.com/watch?v=sunUKFXMHGk 
 您學會了什麼?
 

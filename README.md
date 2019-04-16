@@ -195,7 +195,8 @@ B、相关术语
 
 一、二维矩阵
 
-   案例                             Actual
+   案例                            
+                                        Actual
                    
 		             Has ill           don't ill
 		 
@@ -203,7 +204,7 @@ B、相关术语
 	     
   Predicted  
   
-            Don't ill        32                   112
+             Don't ill        32                   112
    
    
    1、Sensitive ： tell us what percentage of patients with ill were correctly identified
@@ -221,13 +222,15 @@ B、相关术语
    
 二、三维矩阵
 
-            案例                             Actual
+            案例                            
+	                                    Actual
                    
 		              Troll         Gore         Cool
 		 
                Troll           12           102           93
 	      
-  Predicted    Gore            112           23           77
+  Predicted    
+               Gore            112           23           77
   
                Cool            83            92           17
 	           

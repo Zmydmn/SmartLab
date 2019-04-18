@@ -268,10 +268,16 @@ B、相关术语
 
 
 
-Data Clustering using Particle Swarm Optimization
+
+
+二、Data Clustering using Particle Swarm Optimization
+
 (https://pdfs.semanticscholar.org/ad9a/9f90da491c4060ae2e770e73f40242878288.pdf)
+
 注释：关于minboj_fun的优化：
+
       思路： 关于样本点分成2群，群中心分别为C1,C2.
+      
              判断这两个中心选取是否合适，我们的思路是，通过对两个样本中心之间，距离来优化。
              
              
@@ -286,3 +292,14 @@ Data Clustering using Particle Swarm Optimization
 
 优化网页：Basic writing and formatting syntax（https://help.github.com/en/articles/basic-writing-and-formatting-syntax）
 参考：鐘建民 https://github.com/misakimeidaisuki/num_py_homework/blob/master/test5_10730612.ipynb
+
+三、RBF相关
+
+1、http://mccormickml.com/2013/08/16/rbf-network-matlab-code/
+
+2、http://www.di.fc.ul.pt/~jpn/r/rbf/rbf.html
+
+3\https://www.mathworks.com/help/deeplearning/examples/radial-basis-approximation.html
+
+
+

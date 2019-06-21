@@ -3,6 +3,19 @@ SmartLab
 https://github.com/tccnchsu/SmartLab/
 SmartLab
 
+Larning Matalb
+
+Matlab 
+  1、安装包 https://mp.weixin.qq.com/s/WIaG_Kx-qZqA74uux_CZxA
+  2、学习视频 https://search.bilibili.com/all?keyword=matlab&from_source=banner_search
+
+
+
+
+
+
+
+
 一、循序漸進了解基礎知識
 
 1、Simple guide to confusion matrix terminology https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/ 
